@@ -4,6 +4,7 @@ import { parseUnits, formatUnits, Signer, Contract } from "ethers";
 import { PropytoRegistry } from "../typechain-types";
 import chalk from "chalk";
 import Table from "cli-table3";
+import config from "./config.json";
 
 // Create an interface for reading user input
 const rl = readline.createInterface({
@@ -739,11 +740,11 @@ async function main() {
     console.log(chalk.cyan(`Running with the account: ${owner.address}`));
     
     // Get the registry contract address
-    const registryAddress = await prompt("Enter the PropytoRegistry contract address");
+    // const registryAddress = await prompt("Enter the PropytoRegistry contract address");
     
     // Get the PropytoRegistry contract
     const PropytoRegistryFactory = await ethers.getContractFactory("PropytoRegistry");
-    const registry = (await PropytoRegistryFactory.attach(registryAddress)) as PropytoRegistry;
+    const registry = (await PropytoRegistryFactory.attach(config.registryAddress)) as PropytoRegistry;
     
     console.log(chalk.green("\n🏢 Welcome to the Propyto Asset Management Portal! 🏢"));
     
