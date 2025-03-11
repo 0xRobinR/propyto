@@ -1,0 +1,1126 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xac6146576ae8D15040EdE8948298FAE86ef70Dd4",
+      "txHash": "0x5d17123cbcda3aa311b99830f4a9eaa716447ac2865ef7b53188c75ec29eeaea",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x44371059f34A919f22de6F5fF3c81122be27CcD2",
+      "txHash": "0x8730cc40885fe4b8877640f7603b570632c61c4d8965390814a0430681cb9e3e",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x428429d130750cb26437626f1e1832e79A23c7af",
+      "txHash": "0x619773700b8ebdbdfc9010ea3b843162e582b5dfaa619f779c8c300b4ee3e163",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "e0bd10ce44a6e94431d40aae2bb1133071d45506f0460a6a9b6512fd6ef30827": {
+      "address": "0xcA13858a1fb92EE51dD8c463A77d08603c3185Bb",
+      "txHash": "0xa912252815c159b633f214acd042a5a76bcbf5b7f9f86784b454091014392de3",
+      "layout": {
+        "solcVersion": "0.8.28",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:80"
+          },
+          {
+            "label": "_paused",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:29"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:116"
+          },
+          {
+            "label": "assets",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_mapping(t_uint256,t_struct(PropytoAsset)4531_storage)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:145"
+          },
+          {
+            "label": "assetMetadata",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_mapping(t_uint256,t_struct(PropytoAssetMetadata)4540_storage)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:146"
+          },
+          {
+            "label": "assetMedia",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_mapping(t_uint256,t_struct(PropytoAssetMedia)4547_storage)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:147"
+          },
+          {
+            "label": "assetRentData",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_mapping(t_uint256,t_struct(PropytoRentData)4556_storage)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:148"
+          },
+          {
+            "label": "assetOwnership",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_mapping(t_uint256,t_struct(PartialOwnership)4576_storage)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:149"
+          },
+          {
+            "label": "sellerAssets",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:150"
+          },
+          {
+            "label": "assetProposalCount",
+            "offset": 0,
+            "slot": "207",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:151"
+          },
+          {
+            "label": "propytosftAddress",
+            "offset": 0,
+            "slot": "208",
+            "type": "t_mapping(t_uint256,t_address)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:152"
+          },
+          {
+            "label": "assetCount",
+            "offset": 0,
+            "slot": "209",
+            "type": "t_uint256",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:154"
+          },
+          {
+            "label": "usdtToken",
+            "offset": 0,
+            "slot": "210",
+            "type": "t_address",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:155"
+          },
+          {
+            "label": "marketplaceConfig",
+            "offset": 0,
+            "slot": "211",
+            "type": "t_struct(MarketplaceConfig)4585_storage",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:156"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_enum(AssetFurnishing)4479": {
+            "label": "enum PropytoRegistry.AssetFurnishing",
+            "members": [
+              "UNFURNISHED",
+              "PARTIALLY_FURNISHED",
+              "FULLY_FURNISHED",
+              "OTHER"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_enum(AssetStatus)4474": {
+            "label": "enum PropytoRegistry.AssetStatus",
+            "members": [
+              "FOR_SALE",
+              "FOR_RENT",
+              "SOLD",
+              "RENTED",
+              "DELISTED",
+              "OTHER"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_enum(AssetType)4449": {
+            "label": "enum PropytoRegistry.AssetType",
+            "members": [
+              "RESIDENTIAL",
+              "COMMERCIAL",
+              "LAND",
+              "OTHER"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_enum(AssetZone)4485": {
+            "label": "enum PropytoRegistry.AssetZone",
+            "members": [
+              "INDUSTRIAL",
+              "COMMERCIAL",
+              "RESIDENTIAL",
+              "LAND",
+              "OTHER"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(address => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(PartialOwnership)4576_storage)": {
+            "label": "mapping(uint256 => struct PropytoRegistry.PartialOwnership)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(PropytoAsset)4531_storage)": {
+            "label": "mapping(uint256 => struct PropytoRegistry.PropytoAsset)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(PropytoAssetMedia)4547_storage)": {
+            "label": "mapping(uint256 => struct PropytoRegistry.PropytoAssetMedia)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(PropytoAssetMetadata)4540_storage)": {
+            "label": "mapping(uint256 => struct PropytoRegistry.PropytoAssetMetadata)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(PropytoRentData)4556_storage)": {
+            "label": "mapping(uint256 => struct PropytoRegistry.PropytoRentData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(MarketplaceConfig)4585_storage": {
+            "label": "struct PropytoRegistry.MarketplaceConfig",
+            "members": [
+              {
+                "label": "platformFeePercentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "feeCollector",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "listingFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "feesEnabled",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(PartialOwnership)4576_storage": {
+            "label": "struct PropytoRegistry.PartialOwnership",
+            "members": [
+              {
+                "label": "totalShares",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "availableShares",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "sharePrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "minSharePurchase",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "maxSharesPerOwner",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "owners",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "shares",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isInitialized",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "7"
+              }
+            ],
+            "numberOfBytes": "256"
+          },
+          "t_struct(PropytoAsset)4531_storage": {
+            "label": "struct PropytoRegistry.PropytoAsset",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "assetType",
+                "type": "t_enum(AssetType)4449",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "assetAddress",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "1"
+              },
+              {
+                "label": "assetStatus",
+                "type": "t_enum(AssetStatus)4474",
+                "offset": 21,
+                "slot": "1"
+              },
+              {
+                "label": "assetFurnishing",
+                "type": "t_enum(AssetFurnishing)4479",
+                "offset": 22,
+                "slot": "1"
+              },
+              {
+                "label": "assetZone",
+                "type": "t_enum(AssetZone)4485",
+                "offset": 23,
+                "slot": "1"
+              },
+              {
+                "label": "assetPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "assetArea",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "assetAge",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "assetOtherDetails",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isRentable",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isSellable",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "6"
+              },
+              {
+                "label": "isPartiallyOwnEnabled",
+                "type": "t_bool",
+                "offset": 2,
+                "slot": "6"
+              },
+              {
+                "label": "seller",
+                "type": "t_address",
+                "offset": 3,
+                "slot": "6"
+              },
+              {
+                "label": "listingExpiry",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              }
+            ],
+            "numberOfBytes": "256"
+          },
+          "t_struct(PropytoAssetMedia)4547_storage": {
+            "label": "struct PropytoRegistry.PropytoAssetMedia",
+            "members": [
+              {
+                "label": "assetImage",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "assetVideo",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "assetFloorPlan",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(PropytoAssetMetadata)4540_storage": {
+            "label": "struct PropytoRegistry.PropytoAssetMetadata",
+            "members": [
+              {
+                "label": "assetDescription",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "assetFeatures",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "assetAmenities",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "assetLocation",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(PropytoRentData)4556_storage": {
+            "label": "struct PropytoRegistry.PropytoRentData",
+            "members": [
+              {
+                "label": "rentPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "rentDeposit",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "rentPeriod",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "rentSecurityDeposit",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "aa28923119edf4188c36d2518711ddc7bf900cd0610056f452eb4469f9271dca": {
+      "address": "0x4a51C882d0f6ddD77B90c6130fA415e8f0Bf02C2",
+      "txHash": "0x2ae012ecb3994a3ac7f00cc49f6c80da1544b14c18274e42a2fe042d7662c8cc",
+      "layout": {
+        "solcVersion": "0.8.28",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:80"
+          },
+          {
+            "label": "_paused",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:29"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\PausableUpgradeable.sol:116"
+          },
+          {
+            "label": "assets",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_mapping(t_uint256,t_struct(PropytoAsset)4289_storage)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:145"
+          },
+          {
+            "label": "assetMetadata",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_mapping(t_uint256,t_struct(PropytoAssetMetadata)4298_storage)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:146"
+          },
+          {
+            "label": "assetMedia",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_mapping(t_uint256,t_struct(PropytoAssetMedia)4305_storage)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:147"
+          },
+          {
+            "label": "assetRentData",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_mapping(t_uint256,t_struct(PropytoRentData)4314_storage)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:148"
+          },
+          {
+            "label": "assetOwnership",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_mapping(t_uint256,t_struct(PartialOwnership)4334_storage)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:149"
+          },
+          {
+            "label": "sellerAssets",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:150"
+          },
+          {
+            "label": "assetProposalCount",
+            "offset": 0,
+            "slot": "207",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:151"
+          },
+          {
+            "label": "propytosftAddress",
+            "offset": 0,
+            "slot": "208",
+            "type": "t_mapping(t_uint256,t_address)",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:152"
+          },
+          {
+            "label": "assetCount",
+            "offset": 0,
+            "slot": "209",
+            "type": "t_uint256",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:154"
+          },
+          {
+            "label": "usdtToken",
+            "offset": 0,
+            "slot": "210",
+            "type": "t_address",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:155"
+          },
+          {
+            "label": "marketplaceConfig",
+            "offset": 0,
+            "slot": "211",
+            "type": "t_struct(MarketplaceConfig)4343_storage",
+            "contract": "PropytoRegistry",
+            "src": "contracts\\PropytoRegistry.sol:156"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_enum(AssetFurnishing)4237": {
+            "label": "enum PropytoRegistry.AssetFurnishing",
+            "members": [
+              "UNFURNISHED",
+              "PARTIALLY_FURNISHED",
+              "FULLY_FURNISHED",
+              "OTHER"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_enum(AssetStatus)4232": {
+            "label": "enum PropytoRegistry.AssetStatus",
+            "members": [
+              "FOR_SALE",
+              "FOR_RENT",
+              "SOLD",
+              "RENTED",
+              "DELISTED",
+              "OTHER"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_enum(AssetType)4207": {
+            "label": "enum PropytoRegistry.AssetType",
+            "members": [
+              "RESIDENTIAL",
+              "COMMERCIAL",
+              "LAND",
+              "OTHER"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_enum(AssetZone)4243": {
+            "label": "enum PropytoRegistry.AssetZone",
+            "members": [
+              "INDUSTRIAL",
+              "COMMERCIAL",
+              "RESIDENTIAL",
+              "LAND",
+              "OTHER"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(address => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(PartialOwnership)4334_storage)": {
+            "label": "mapping(uint256 => struct PropytoRegistry.PartialOwnership)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(PropytoAsset)4289_storage)": {
+            "label": "mapping(uint256 => struct PropytoRegistry.PropytoAsset)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(PropytoAssetMedia)4305_storage)": {
+            "label": "mapping(uint256 => struct PropytoRegistry.PropytoAssetMedia)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(PropytoAssetMetadata)4298_storage)": {
+            "label": "mapping(uint256 => struct PropytoRegistry.PropytoAssetMetadata)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(PropytoRentData)4314_storage)": {
+            "label": "mapping(uint256 => struct PropytoRegistry.PropytoRentData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(MarketplaceConfig)4343_storage": {
+            "label": "struct PropytoRegistry.MarketplaceConfig",
+            "members": [
+              {
+                "label": "platformFeePercentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "feeCollector",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "listingFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "feesEnabled",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(PartialOwnership)4334_storage": {
+            "label": "struct PropytoRegistry.PartialOwnership",
+            "members": [
+              {
+                "label": "totalShares",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "availableShares",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "sharePrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "minSharePurchase",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "maxSharesPerOwner",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "owners",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "shares",
+                "type": "t_mapping(t_address,t_uint256)",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isInitialized",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "7"
+              }
+            ],
+            "numberOfBytes": "256"
+          },
+          "t_struct(PropytoAsset)4289_storage": {
+            "label": "struct PropytoRegistry.PropytoAsset",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "assetType",
+                "type": "t_enum(AssetType)4207",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "assetAddress",
+                "type": "t_address",
+                "offset": 1,
+                "slot": "1"
+              },
+              {
+                "label": "assetStatus",
+                "type": "t_enum(AssetStatus)4232",
+                "offset": 21,
+                "slot": "1"
+              },
+              {
+                "label": "assetFurnishing",
+                "type": "t_enum(AssetFurnishing)4237",
+                "offset": 22,
+                "slot": "1"
+              },
+              {
+                "label": "assetZone",
+                "type": "t_enum(AssetZone)4243",
+                "offset": 23,
+                "slot": "1"
+              },
+              {
+                "label": "assetPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "assetArea",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "assetAge",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "assetOtherDetails",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isRentable",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isSellable",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "6"
+              },
+              {
+                "label": "isPartiallyOwnEnabled",
+                "type": "t_bool",
+                "offset": 2,
+                "slot": "6"
+              },
+              {
+                "label": "seller",
+                "type": "t_address",
+                "offset": 3,
+                "slot": "6"
+              },
+              {
+                "label": "listingExpiry",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              }
+            ],
+            "numberOfBytes": "256"
+          },
+          "t_struct(PropytoAssetMedia)4305_storage": {
+            "label": "struct PropytoRegistry.PropytoAssetMedia",
+            "members": [
+              {
+                "label": "assetImage",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "assetVideo",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "assetFloorPlan",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(PropytoAssetMetadata)4298_storage": {
+            "label": "struct PropytoRegistry.PropytoAssetMetadata",
+            "members": [
+              {
+                "label": "assetDescription",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "assetFeatures",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "assetAmenities",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "assetLocation",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(PropytoRentData)4314_storage": {
+            "label": "struct PropytoRegistry.PropytoRentData",
+            "members": [
+              {
+                "label": "rentPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "rentDeposit",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "rentPeriod",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "rentSecurityDeposit",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}
